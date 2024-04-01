@@ -30,6 +30,7 @@ export const MemberSidebar = () => {
                     url={member.userUrl}
                     isGroupOwner={member.isGroupOwner}
                     activity={member.activity}
+                    isOnline={member.isOnline}
                     />
                 ))}
             </SidebarSection>
@@ -44,16 +45,17 @@ type MemberSidebarItemProps = {
     url: string
     activity?: string
     isGroupOwner?: boolean
+    isOnline?: boolean
 }
 
 
 function MemberSidebarItem({ 
-    iconUrl, userName, url, activity, isGroupOwner = false
+    iconUrl, userName, url, activity, isGroupOwner = false, isOnline = false
  }: MemberSidebarItemProps) {
     return (
         <a href={url} className={twMerge(buttonStyles({ variant: "default", size: "icon"}),
         `w-full flex flex-row items-center rounded-lg gap-4 mb-0 p-3 mr-3 font-bold`)}>
-            <img src={iconUrl} className="w-8 h-8 rounded-full" />
+            <img src={iconUrl} className={`w-8 h-8 rounded-full ${isOnline ? " border-green-500 border-2" : "border-transparent"}`} />
             <div>
                 <div className="flex gap-2 items-center">
                     <div>{userName}</div>

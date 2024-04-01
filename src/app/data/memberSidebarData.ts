@@ -7,7 +7,8 @@ export const groupMembers = [
         userName: "CyberNinja",
         userUrl: "",
         activity: "Playing Games",
-        isGroupOwner: true
+        isGroupOwner: true,
+        isOnline: true,
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const groupMembers = [
         userName: "GalacticExplorer",
         userUrl: "https://www.youtube.com/@KevinPowell",
         activity: "",
+        isOnline: false,
     },
     {
         id: 3,
@@ -23,5 +25,6 @@ export const groupMembers = [
         userName: "TechSavvy",
         activity: "Playing with Lego",
         userUrl: "https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA",
+        isOnline: true,
     }
 ]
