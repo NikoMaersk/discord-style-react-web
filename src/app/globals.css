@@ -31,3 +31,44 @@ body {
     text-wrap: balance;
   }
 }
+
+*::-webkit-scrollbar {
+  @apply bg-transparent w-2;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded-full;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  @apply bg-transparent
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  @apply bg-gray-900
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-track {
+  @apply bg-gray-800
+}
+
+.scrollbar-hidden::-webkit-scrollbar-track {
+  @apply bg-transparent
+}
+
+.shadow-bottom {
+  position: relative;
+}
+
+.shadow-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust the distance of the shadow from the element */
+  width: 100%;
+  height: 4px; /* Adjust the thickness of the shadow */
+  background: rgba(0, 0, 0, 0.1); /* Shadow color */
+  z-index: -1; /* Ensure the shadow is behind the element */
+}
+
+
