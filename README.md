@@ -4,7 +4,7 @@
 
 # Tech stack
 
-[React](https://react.dev/) - Javascript library for component based user interfaces
-[NextJS](https://nextjs.org/) - React Framework for the Web
-[TailwindCSS](https://tailwindcss.com/) - CSS framework
-[Lucid Icon](https://lucide.dev/) - Icon library
+[React](https://react.dev/) - Javascript library for component based user interfaces  
+[NextJS](https://nextjs.org/) - React Framework for the Web  
+[TailwindCSS](https://tailwindcss.com/) - CSS framework  
+[Lucid Icon](https://lucide.dev/) - Icon library  
