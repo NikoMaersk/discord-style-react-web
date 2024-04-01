@@ -4,7 +4,7 @@
 
 # Tech stack
 
-[React](https://react.dev/)
-[NextJS](https://nextjs.org/)
-[TailwindCSS](https://tailwindcss.com/)
+[React](https://react.dev/)  
+[NextJS](https://nextjs.org/)  
+[TailwindCSS](https://tailwindcss.com/)  
 [Lucid Icon](https://lucide.dev/)
