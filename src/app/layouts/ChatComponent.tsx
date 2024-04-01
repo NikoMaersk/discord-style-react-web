@@ -9,14 +9,14 @@ import { Bot, PlusCircleIcon } from "lucide-react";
 
 export default function ChatComponent() {
 
-    return <div className="h-screen flex flex-row">
+    return <div className="h-screen flex flex-row overflow-hidden">
         <ChannelSideBar />
-        <div className="flex flex-col w-full">
-            <div className="flex flex-col shadow-lg">
+        <div className="flex flex-col w-full ">
+            <div className="shadow-lg">
                 <ChatTopbar group="My Group" />
             </div>
-            <div className="flex flex-row whitespace-nowrap overflow-y-auto scrollbar">
-                <div className="flex flex-col w-full justify-between whitespace-nowrap overflow-y-auto scrollbar">
+            <div className="flex flex-row h-full overflow-hidden ">
+                <div className="flex flex-col w-full justify-between ">
                     <ContentContainer />
                     <BottomBar />
                 </div>
@@ -29,7 +29,7 @@ export default function ChatComponent() {
 
 function ContentContainer() {
     return (
-        <div className="flex flex-col w-full whitespace-nowrap overflow-y-auto bg-transparent scrollbar-hidden">
+        <div className="flex flex-col overflow-y-hidden bg-transparent scrollbar-hidden">
             <div className="gap-4 flex flex-col">
                 {ChatData.map(chatData => (
                     <ContentItem

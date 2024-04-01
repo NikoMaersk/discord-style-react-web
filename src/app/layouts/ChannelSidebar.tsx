@@ -5,11 +5,13 @@ import { groupMembers } from "../data/memberSidebarData";
 
 
 export function ChannelSideBar() {
-    return <div className="max-h-screen">
-        <aside className="max-h-screen  overflow-y-auto h-full scrollbar-hidden w-[350px] pb-4 ml-1 bg-gray-800">
-            
+    return <div className="max-h-screen flex-shrink flex">
+        <aside className="max-h-screen h-full scrollbar-hidden w-64 md:w-72 lg:w-80 xl:w-96 pb-4 ml-1 bg-gray-800">
+
         </aside>
     </div>
+
+
 }
 
 type ChannelSideBarItem = {
