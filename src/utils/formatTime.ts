@@ -1,5 +1,5 @@
 
-const formatter = new Intl.RelativeTimeFormat(undefined, {
+const formatter = new Intl.RelativeTimeFormat('en', {
     numeric: "always",
 })
 
