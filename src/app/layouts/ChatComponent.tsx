@@ -29,7 +29,7 @@ export default function ChatComponent() {
 
 function ContentContainer() {
     return (
-        <div className="flex flex-col overflow-y-hidden bg-transparent scrollbar-hidden">
+        <div className="flex flex-col overflow-y-auto bg-transparent scrollbar-hidden">
             <div className="gap-4 flex flex-col">
                 {ChatData.map(chatData => (
                     <ContentItem
