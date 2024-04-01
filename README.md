@@ -1,6 +1,6 @@
 # React chat component
 
-![image](https://github.com/NikoMaersk/web-chat/assets/114466889/4bfc79a5-c05b-4261-9917-01ebd46487c0)
+![image](https://github.com/NikoMaersk/web-chat/assets/114466889/fa049cd4-856a-4b15-ad04-44c7c0387a51)
 
 # Tech stack
 
